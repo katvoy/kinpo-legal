@@ -21,12 +21,12 @@
         }
         header {
             background: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
             border-bottom: 1px solid #E2E8F0;
         }
         .logo {
-            max-height: 80px;
+            max-height: 160px; /* Tamaño 2x */
             margin-bottom: 20px;
         }
         .container {
@@ -37,18 +37,26 @@
             border-radius: 24px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: var(--primary);
         }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
         h2 {
-            margin-top: 30px;
+            margin-top: 40px;
             border-bottom: 2px solid var(--accent);
             display: inline-block;
             padding-bottom: 5px;
+            width: 100%;
+        }
+        .legal-block {
+            margin-bottom: 30px;
+        }
+        .disclaimer {
+            background: #FEF2F2;
+            border-left: 4px solid #EF4444;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #991B1B;
+            margin: 20px 0;
         }
         .footer {
             text-align: center;
@@ -61,6 +69,9 @@
                 margin: 20px;
                 padding: 20px;
             }
+            .logo {
+                max-height: 120px;
+            }
         }
     </style>
 </head>
@@ -68,27 +79,44 @@
 
 <header>
     <img src="logo.png" alt="Kinpo Logo" class="logo">
-    <h1>Centro de Legalidad</h1>
-    <p>Privacidad, Seguridad y Términos de Uso</p>
+    <p style="color: #64748B; font-weight: 600;">Información Legal y Regulatoria</p>
 </header>
 
 <div class="container">
-    <h2>Política de Privacidad</h2>
-    <p><strong>Última actualización:</strong> 13 de mayo de 2026</p>
-    
-    <p>En Kinpo, valoramos tu privacidad y estamos comprometidos a proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información cuando utilizas nuestra aplicación móvil.</p>
+    <div class="legal-block">
+        <h2>1. Política de Privacidad</h2>
+        <p><strong>Última actualización:</strong> 13 de mayo de 2026</p>
+        <p>En Kinpo, valoramos tu privacidad. Recopilamos información del perfil, datos de mascotas y geolocalización para alertas de zona. Tus datos están cifrados y no se venden a terceros.</p>
+    </div>
 
-    <h3>1. Información que Recopilamos</h3>
-    <p>Recopilamos información del perfil (nombre, correo), datos de tus mascotas (nombre, especie, raza, fotos) y datos de geolocalización para las alertas de mascotas perdidas.</p>
+    <div class="legal-block">
+        <h2>2. Términos y Condiciones de Uso</h2>
+        
+        <h3>2.1 Aceptación de los Términos</h3>
+        <p>Al descargar, instalar o utilizar la aplicación Kinpo, usted acepta quedar vinculado por estos Términos y Condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar la aplicación.</p>
 
-    <h3>2. Uso de la Información</h3>
-    <p>Utilizamos tus datos para proporcionar los servicios de la app, enviar alertas de zona y gestionar recordatorios de salud veterinaria.</p>
+        <h3>2.2 Naturaleza del Servicio</h3>
+        <p>Kinpo es una plataforma tecnológica que facilita la comunicación entre dueños de mascotas y la comunidad. Kinpo no es una agencia de seguridad, ni un servicio de rescate profesional, ni garantiza el hallazgo de mascotas extraviadas.</p>
 
-    <h3>3. Almacenamiento y Seguridad</h3>
-    <p>Tus datos se almacenan de forma segura utilizando infraestructura cifrada (Supabase).</p>
+        <div class="disclaimer">
+            <strong>DESCARGO DE RESPONSABILIDAD:</strong> El servicio se proporciona "TAL CUAL" (AS-IS) y "SEGÚN DISPONIBILIDAD" (AS-AVAILABLE). Kinpo no otorga garantías de ningún tipo, ya sean expresas o implícitas, sobre la precisión de las ubicaciones reportadas por los usuarios o el éxito en la recuperación de animales.
+        </div>
 
-    <h2>Términos y Condiciones</h2>
-    <p>Al utilizar Kinpo, aceptas nuestros términos de servicio diseñados para mantener una comunidad segura y colaborativa para el bienestar de todas las mascotas.</p>
+        <h3>2.3 Limitación de Responsabilidad</h3>
+        <p>En la medida máxima permitida por la ley, Kinpo, sus desarrolladores y afiliados no serán responsables bajo ninguna circunstancia por:</p>
+        <ul>
+            <li>Daños indirectos, incidentales, especiales o punitivos.</li>
+            <li>Pérdida de mascotas, daños a la propiedad o lesiones resultantes de encuentros coordinados a través de la app.</li>
+            <li>Errores en la geolocalización o retrasos en las notificaciones push.</li>
+            <li>Conducta inapropiada o ilegal de cualquier usuario de la plataforma.</li>
+        </ul>
+
+        <h3>2.4 Responsabilidad del Usuario</h3>
+        <p>Usted es el único responsable de la veracidad de la información publicada y de las interacciones físicas que decida realizar con otros miembros de la comunidad. Recomendamos siempre tomar medidas de precaución al encontrarse con desconocidos.</p>
+
+        <h3>2.5 Modificaciones</h3>
+        <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuado de la aplicación tras dichos cambios constituirá su aceptación de los nuevos términos.</p>
+    </div>
 </div>
 
 <div class="footer">
