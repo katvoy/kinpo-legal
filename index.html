@@ -26,8 +26,10 @@
             border-bottom: 1px solid #E2E8F0;
         }
         .logo {
-            max-height: 160px; /* Tamaño 2x */
-            margin-bottom: 20px;
+            width: 70%; /* Ocupa el 70% del ancho */
+            max-width: 600px; /* Límite para que no se vea excesivo en pantallas muy grandes */
+            height: auto;
+            margin-bottom: 10px;
         }
         .container {
             max-width: 800px;
@@ -70,7 +72,7 @@
                 padding: 20px;
             }
             .logo {
-                max-height: 120px;
+                width: 85%; /* Un poco más grande en móviles */
             }
         }
     </style>
@@ -79,7 +81,7 @@
 
 <header>
     <img src="logo.png" alt="Kinpo Logo" class="logo">
-    <p style="color: #64748B; font-weight: 600;">Información Legal y Regulatoria</p>
+    <p style="color: #64748B; font-weight: 600; margin-top: 0;">Información Legal y Regulatoria</p>
 </header>
 
 <div class="container">
